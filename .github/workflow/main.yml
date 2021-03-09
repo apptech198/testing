@@ -1,7 +1,4 @@
-on:
-  push:
-    branches:
-      - master
+on: push
 
 name: deploy production
 jobs:
@@ -20,4 +17,4 @@ jobs:
           server: ftp.bhartiyablog.com
           username: mohan@bhartiyablog.com
           password: ${{ secrets.ftp_password }}
-          server-dir: ./rohit/
+          server-dir: /rohit/
