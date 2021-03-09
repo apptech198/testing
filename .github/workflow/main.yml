@@ -12,7 +12,7 @@ jobs:
           fetch-depth: 2
 
       - name: 📂 Sync files
-        uses: SamKirkland/FTP-Deploy-Action@4.0.0
+        uses: bhartiyablog/FTP-Deploy-Action@4.0.0
         with:
           server: ftp.bhartiyablog.com
           username: mohan@bhartiyablog.com
