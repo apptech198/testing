@@ -16,5 +16,5 @@ jobs:
         with:
           server: ftp.bhartiyablog.com
           username: mohan@bhartiyablog.com
-          password: ${{ secrets.ftp_password }}
+          password: 9827581883
           port: 21
