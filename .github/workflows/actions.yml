@@ -1,0 +1,28 @@
+on: push
+
+name: deploy production
+
+
+jobs:
+  testing:
+    name: testing
+    runs-on: ubuntu-latest
+    steps:
+#      - name: deploy production
+#      - uses: ad-m/github-push-action@master
+#          with:
+#            branch: master
+#            github_token: ${{ secrets.TOKEN }}
+
+
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v2.3.2
+
+      - name: 📂 Sync files
+        uses: apptech198/testing@1.0.0
+        with:
+          server: bhartiyablog.com
+          username: rohit@bhartiyablog.com
+          password: ${{ secrets.ftp_password }}
+          port: 21
+          server-dir: /rohit
