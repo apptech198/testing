@@ -16,7 +16,7 @@ jobs:
 
 
       - name: 🚚 Get latest code
-        uses: action/checkout@v2.3.2
+        uses: action/checkout@v1
 
       - name: 📂 Sync files
         uses: ./
