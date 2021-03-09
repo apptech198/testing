@@ -15,8 +15,8 @@ jobs:
 #            github_token: ${{ secrets.TOKEN }}
 
 
-      - name: 🚚 Get latest code
-        uses: action/checkout@v1
+#       - name: 🚚 Get latest code
+#         uses: action/checkout@v1
 
       - name: 📂 Sync files
         uses: ./
