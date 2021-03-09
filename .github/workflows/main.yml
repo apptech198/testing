@@ -8,11 +8,11 @@ jobs:
     name: testing
     runs-on: ubuntu-latest
     steps:
-      - name: deploy production
-      - uses: ad-m/github-push-action@master
-          with:
-            branch: master
-            github_token: ${{ secrets.TOKEN }}
+#      - name: deploy production
+#      - uses: ad-m/github-push-action@master
+#          with:
+#            branch: master
+#            github_token: ${{ secrets.TOKEN }}
 
 
       - name: 🚚 Get latest code
