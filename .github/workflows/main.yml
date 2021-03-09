@@ -12,8 +12,8 @@ jobs:
       - name: 📂 Sync files
         uses: bhartiyablog/FTP-Deploy-Action@4.0.0
         with:
-          server: bhartiyablog.com
+          server: ftp.bhartiyablog.com
           username: mohan@bhartiyablog.com
           password: ${{ secrets.ftp_password }}
           port: 21
-          server-dir: ./rohit
+          server-dir: /rohit
