@@ -2,15 +2,15 @@ on: push
 
 name: deploy production
 jobs:
-  FTP-Deploy-Action:
-    name: FTP-Deploy-Action
+  testing:
+    name: testing
     runs-on: ubuntu-latest
     steps:
       - name: 🚚 Get latest code
         uses: actions/checkout@v2.3.2
 
       - name: 📂 Sync files
-        uses: apptech198/testing@4.0.0
+        uses: apptech198/testing
         with:
           server: bhartiyablog.com
           username: rohit@bhartiyablog.com
